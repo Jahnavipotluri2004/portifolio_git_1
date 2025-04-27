@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jahnavi Potluri – Education & Certifications"/>
+  <title>Education & Certifications | Jahnavi Potluri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: url('imgprofile.jpg') no-repeat center/cover;
+      min-height: 100vh;
+      backdrop-filter: blur(5px);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.8);
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .navbar .logo span {
+      color: #007bff;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .navbar .nav-links li {
+      margin: 0 15px;
+    }
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+      position: relative;
+    }
+    .navbar .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #007bff;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.4s;
+    }
+    .navbar .nav-links a:hover::after {
+      width: 100%;
+    }
+    .page-content {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 60px 20px;
+      margin: 120px auto;
+      max-width: 1000px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #333;
+      position: relative;
+    }
+    h1::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #007bff;
+      display: block;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      font-size: 1.5rem;
+      color: #6c63ff;
+      margin-bottom: 10px;
+    }
+    .card span {
+      display: block;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #333;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      color: #007bff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Jahnavi <span>Potluri</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Me</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="educational.html">Education & Certifications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-content">
+    <h1>Education & Certifications</h1>
+
+    <div class="section-title">Education</div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>KL University</h3>
+        <span>B.Tech in Computer Science (2022–2026)</span>
+        <p>CGPA: 9.5/10</p>
+      </div>
+      <div class="card">
+        <h3>Resonance Jr. College</h3>
+        <span>Intermediate (2020–2022)</span>
+        <p>CGPA: 9.0/10</p>
+      </div>
+      <div class="card">
+        <h3>St. John’s Hr Sec School</h3>
+        <span>Primary Education (2009–2020)</span>
+        <p>CGPA: 9.0/10</p>
+      </div>
+    </div>
+
+    <div class="section-title">Certifications</div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <span>Issued April 2024 • Expires May 2027</span>
+        <div class="download-btn">
+          <a href="AWS Certified Cloud Practitioner certificate (4).pdf" download>Download PDF</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Red Hat Certified Specialist (EX183)</h3>
+        <span>Issued 2024</span>
+        <div class="download-btn">
+          <a href="Red_Hat_Certified_Enterprise_Application_Developer_Badge20250121-26-hl6ie4.pdf" download>Download PDF</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Salesforce AI Fundamentals</h3>
+        <span>Issued 2024</span>
+        <div class="download-btn">
+          <a href="Global certificate Sales force.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

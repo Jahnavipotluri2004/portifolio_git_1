@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Projects | Jahnavi Potluri"/>
+  <title>Projects | Jahnavi Potluri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* Global styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: url('imgprofile.jpg') no-repeat center center/cover; min-height: 100vh; width: 100%; }
+
+    /* Navigation Bar Styling */
+    .navbar { display: flex; justify-content: space-between; align-items: center; background-color: #333; padding: 10px 20px; position: fixed; top: 0; width: 100%; z-index: 100; transition: background-color 0.3s ease; }
+    .navbar .logo { font-size: 24px; color: white; font-weight: bold; }
+    .navbar .logo span { color: #007bff; }
+    .navbar .nav-links { list-style: none; display: flex; }
+    .navbar .nav-links li { margin: 0 15px; }
+    .navbar .nav-links a { text-decoration: none; color: white; font-size: 18px; transition: color 0.3s; font-weight: 500; }
+    .navbar .nav-links a:hover { color: #007bff; }
+
+    /* Projects Section */
+    .projects { 
+      padding-top: 100px; 
+      padding: 60px 50px; 
+      background: rgba(255, 255, 255, 0.9); 
+      border-radius: 25px; 
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+      max-width: 80%; 
+      margin: 0 auto;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .projects h2 { 
+      font-size: 2.8rem; 
+      color: #333; 
+      margin-bottom: 30px; 
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .projects ul { 
+      list-style: none; 
+      font-size: 1.2rem; 
+      color: #555; 
+      text-align: left; 
+      padding-left: 20px; 
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+
+    .projects ul li { 
+      margin: 15px 0; 
+      padding-left: 20px; 
+      position: relative;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .projects ul li strong { 
+      font-size: 1.3rem; 
+      color: #333;
+      font-weight: 600;
+    }
+
+    .projects ul li::before {
+      content: "✔";
+      position: absolute;
+      left: -25px;
+      top: 5px;
+      font-size: 1.2rem;
+      color: #007bff;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .projects ul li:hover {
+      transform: translateX(10px);
+    }
+
+    .projects ul li:hover::before {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    /* Hover Effects on list items */
+    .projects ul li:hover {
+      background-color: #f5faff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Button Styling */
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 18px;
+      border: 2px solid #007bff;
+      transition: background 0.3s ease, transform 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .btn:hover {
+      background: white;
+      color: #007bff;
+      transform: scale(1.1);
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .projects {
+        padding: 40px 20px;
+      }
+
+      .projects h2 {
+        font-size: 2.2rem;
+      }
+
+      .projects ul {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Jahnavi <span>Potluri</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="educational.html">Education & Certifications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <li><strong>Amazon - Intraday Dashboard (Internship):</strong> As part of my internship at Amazon, I worked on an intraday dashboard project aimed at improving the operational efficiency of internal stakeholders. The dashboard aggregated large volumes of real-time data to provide quick insights into business metrics, such as sales performance, inventory levels, and customer satisfaction. 
+        <br><br>
+        <strong>Key Responsibilities:</strong>
+        <ul>
+          <li>Developed automated data pipelines using Python and SQL for aggregating data from various internal systems.</li>
+          <li>Created interactive data visualizations using Tableau to help stakeholders monitor and analyze key metrics in real-time.</li>
+          <li>Enhanced the efficiency of data processing by optimizing SQL queries and automating routine reports, reducing report generation time by 40%.</li>
+          <li>Collaborated with cross-functional teams to ensure the dashboard met the operational needs of sales, inventory, and customer support teams.</li>
+          <li>Provided insights into operational trends, leading to the identification of areas for improvement in logistics and customer service.</li>
+        </ul>
+      </li>
+      <li><strong>Mental Health and Support System:</strong> A web-based platform designed to help teenagers manage stress effectively. It uses AI to provide personalized advice based on user input, providing coping mechanisms, mental health tips, and resources tailored to the individual needs of the user.</li>
+      <li><strong>Banking System (MERN Stack):</strong> A full-stack banking application using the MERN stack (MongoDB, Express.js, React.js, Node.js). The project focuses on secure transaction management, user authentication, and account management, offering users a seamless experience with added security features like two-factor authentication.</li>
+      <li><strong>AI-based Virtual Assistant:</strong> Developed using Python, this AI assistant is designed to automate routine tasks such as setting reminders, answering queries, and controlling IoT devices. It features voice recognition and natural language processing to improve user interaction.</li>
+      <li><strong>E-commerce Website:</strong> A fully functional e-commerce platform built with Python. It includes features such as secure user authentication, a shopping cart, product recommendations, and a payment gateway. The platform also offers users the ability to track their orders and manage their profiles efficiently.</li>
+    </ul>
+
+    <!-- GitHub Button -->
+    <a href="https://github.com/your-github-username" class="btn" target="_blank">Visit My GitHub</a>
+
+  </section>
+
+</body>
+</html>

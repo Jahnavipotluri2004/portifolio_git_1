@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jahnavi Potluri - Data Engineer | About Me"/>
+  <title>About Me | Jahnavi Potluri</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('imgprofile.jpg');
+      min-height: 100vh;
+      width: 100%;
+      color: white;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Smooth Scroll Effect */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation Bar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .navbar .logo span {
+      color: #00f1ff;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar .nav-links li {
+      margin: 0 15px;
+    }
+
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #00f1ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(5px);
+      margin-top: 60px; /* push down under navbar */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 50px 40px;
+      border-radius: 25px; /* Increased border-radius for a larger curve */
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); /* Larger shadow */
+      text-align: center;
+      width: 500px;
+      max-width: 90%;
+      transition: transform 0.5s ease;
+    }
+
+    .hero:hover .content {
+      transform: translateY(-10px);
+    }
+
+    .profile-photo {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #00f1ff;
+      margin-bottom: 20px;
+      animation: rotateImage 10s linear infinite; /* Adding rotation animation */
+    }
+
+    /* Rotate the profile photo automatically */
+    @keyframes rotateImage {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: transform 0.5s ease, color 0.3s ease;
+    }
+
+    /* Hover Effect for Name */
+    h1:hover {
+      transform: rotate(360deg);
+      color: #00f1ff;
+    }
+
+    h1 span {
+      display: block;
+      transition: opacity 0.3s ease;
+      opacity: 0;
+    }
+
+    h1:hover span {
+      opacity: 1;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #00f1ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      transition: background 0.3s ease;
+      font-size: 18px;
+      border: 2px solid #00f1ff;
+    }
+
+    .btn:hover {
+      background: white;
+      color: #00f1ff;
+    }
+
+    /* Animation for content on load */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .content {
+      animation: fadeIn 1.5s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Jahnavi <span>Potluri</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / About Me Section -->
+  <section class="hero">
+    <div class="content">
+      <img src="imgprofile.jpg" alt="Jahnavi Potluri" class="profile-photo" />
+      <h1>Jahnavi <span>Software Developer</span></h1>
+      <p>Data Engineer Intern at Amazon | AWS Certified Cloud Practitioner | Red Hat Certified Enterprise Developer | Salesforce AI Associate
+
+        I'm a passionate Computer Science student (9.53/10 CGPA) at KL University, driven by a deep interest in Data Engineering, Cloud Technologies, and Software Development. With strong skills in SQL, AWS, and full-stack development, I thrive in building scalable solutions and working on real-world projects.
+        As an AFE Scholar and certified professional, I combine my technical expertise with excellent public speaking and communication skills. I am excited to grow in challenging environments, contribute to high-impact projects, and continuously learn and innovate in the tech industry.
+      </p>
+      <a href="projects.html" class="btn">View My Work</a>
+    </div>
+  </section>
+
+</body>
+</html>

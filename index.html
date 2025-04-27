@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahnavi Potluri - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .navbar .logo {
+            font-size: 28px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .navbar .logo span {
+            color: #ff7f50;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links li {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .navbar .nav-links a::after {
+            content: "";
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%; height: 2px;
+            background-color: #ff7f50;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .navbar .nav-links a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url('imgprofile.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            position: relative;
+        }
+
+        .hero .content {
+            background: rgba(0,0,0,0.6);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 90%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero .content:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #ff7f50;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Greeting fade */
+        #greeting {
+            font-size: 36px;
+            margin: 10px 0;
+            color: white;
+            transition: opacity 0.5s ease;
+            opacity: 1;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff7f50;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff5733;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff7f50;
+        }
+
+        section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Skills Section */
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        #skills ul li {
+            background-color: #ff7f50;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        #skills ul li:hover {
+            transform: scale(1.1);
+        }
+
+        /* Projects Section */
+        #projects ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        #projects ul li {
+            list-style: none;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            padding: 30px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        #projects ul li:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        #projects a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Jahnavi<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Me</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education & Certifications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="intro" class="hero">
+    <div class="content">
+      <img src="img123.jpg" alt="Profile Photo" class="profile-photo">
+      <h1 id="greeting">Hello, I'm Jahnavi</h1>
+      <p>An Intern at AMAZON-2024 || Amazon Data Engineer || AWS Certified || RED-HAT EX-183 || AFE Scholar || A driven and diligent software engineer seeking an internship. Possesses fluency in public speaking. Outstanding orator.</p>
+      <a href="USAJobs_Federal_Resume (3).pdf" class="btn" download>Hire Me</a>
+    </div>
+  </section>
+
+ 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jahnavi Potluri. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const greetingEl = document.getElementById('greeting');
+    const messages = ['Hello, I\'m Jahnavi', 'Hi, I am Software Developer'];
+    let idx = 0;
+    setInterval(() => {
+      greetingEl.style.opacity = '0';
+      setTimeout(() => {
+        idx = (idx + 1) % messages.length;
+        greetingEl.textContent = messages[idx];
+        greetingEl.style.opacity = '1';
+      }, 500);
+    }, 3000);
+  </script>
+</body>
+</html>
