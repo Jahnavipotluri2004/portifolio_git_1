@@ -13,11 +13,13 @@
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
     }
+
     body {
       background: url('imgprofile.jpg') no-repeat center/cover;
       min-height: 100vh;
       backdrop-filter: blur(5px);
     }
+
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -29,21 +31,26 @@
       width: 100%;
       z-index: 100;
     }
+
     .navbar .logo {
       font-size: 24px;
       color: #fff;
       font-weight: bold;
     }
+
     .navbar .logo span {
       color: #007bff;
     }
+
     .navbar .nav-links {
       list-style: none;
       display: flex;
     }
+
     .navbar .nav-links li {
       margin: 0 15px;
     }
+
     .navbar .nav-links a {
       color: #fff;
       text-decoration: none;
@@ -51,6 +58,7 @@
       transition: color 0.3s;
       position: relative;
     }
+
     .navbar .nav-links a::after {
       content: '';
       position: absolute;
@@ -61,9 +69,11 @@
       bottom: -4px;
       transition: width 0.4s;
     }
+
     .navbar .nav-links a:hover::after {
       width: 100%;
     }
+
     .page-content {
       background: rgba(255, 255, 255, 0.95);
       padding: 60px 20px;
@@ -72,6 +82,7 @@
       border-radius: 15px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     }
+
     h1 {
       text-align: center;
       font-size: 2.5rem;
@@ -79,6 +90,7 @@
       color: #333;
       position: relative;
     }
+
     h1::after {
       content: '';
       width: 80px;
@@ -88,11 +100,21 @@
       margin: 10px auto;
       border-radius: 2px;
     }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      color: #007bff;
+      text-align: center;
+    }
+
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
     }
+
     .card {
       background: #fff;
       border-radius: 12px;
@@ -101,31 +123,64 @@
       transition: transform 0.3s, box-shadow 0.3s;
       cursor: pointer;
     }
+
     .card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 25px rgba(0,0,0,0.2);
     }
+
     .card h3 {
       font-size: 1.5rem;
       color: #6c63ff;
       margin-bottom: 10px;
     }
+
     .card span {
       display: block;
       font-style: italic;
       color: #555;
       margin-bottom: 15px;
     }
+
     .card p {
       font-size: 1rem;
       color: #333;
     }
-    .section-title {
-      font-size: 1.8rem;
-      margin-top: 50px;
-      margin-bottom: 20px;
-      color: #007bff;
-      text-align: center;
+
+    @media (max-width: 768px) {
+      .page-content {
+        padding: 30px 15px;
+      }
+
+      .card h3 {
+        font-size: 1.3rem;
+      }
+
+      .card p {
+        font-size: 0.95rem;
+      }
+
+      .card span {
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .navbar .nav-links a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar .nav-links {
+        display: none;
+      }
     }
   </style>
 </head>

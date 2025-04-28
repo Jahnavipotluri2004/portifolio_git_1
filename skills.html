@@ -157,18 +157,59 @@
       line-height: 1.5;
     }
 
-    /* Media Query */
+    /* Media Query for Mobile Devices */
     @media (max-width: 768px) {
+      .navbar .logo {
+        font-size: 22px;
+      }
+
+      .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar .nav-links li {
+        margin: 10px 0;
+      }
+
       .skills {
         padding: 60px 20px 40px;
+      }
+
+      .skills h2 {
+        font-size: 2.5rem;
+      }
+
+      .skills p {
+        font-size: 1rem;
+      }
+
+      .skills ul {
+        font-size: 1rem;
+        text-align: center;
       }
 
       .skills .skills-cards {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+      }
+
+      .skills-card {
+        width: 80%;
       }
     }
 
+    /* Media Query for Small Mobile Devices */
+    @media (max-width: 480px) {
+      .skills h2 {
+        font-size: 2rem;
+      }
+
+      .skills-card {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>

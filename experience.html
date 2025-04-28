@@ -126,11 +126,36 @@
     .download-btn a:hover {
       background-color: #5848c2;
     }
+
+    /* Mobile view optimization */
     @media(max-width: 768px) {
       .page-content {
         grid-template-columns: 1fr;
+        padding: 80px 15px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+      .card {
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      .card .job-title {
+        font-size: 1.4rem;
+      }
+      .card .job-duration {
+        font-size: 0.9rem;
+      }
+      .job-description p {
+        font-size: 0.9rem;
+      }
+      .download-btn a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
       }
     }
+
   </style>
 </head>
 

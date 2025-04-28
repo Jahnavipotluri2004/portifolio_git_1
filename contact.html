@@ -119,6 +119,48 @@
       color: #0056b3;
       text-decoration: underline;
     }
+
+    /* Mobile View Adjustments */
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar .nav-links li {
+        margin: 10px 0;
+      }
+      .page-content {
+        padding: 20px;
+        margin-top: 120px;  /* For navbar spacing */
+        width: 90%;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .info {
+        font-size: 1rem;
+      }
+      .info i {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* For very small screens (mobile portrait) */
+    @media (max-width: 480px) {
+      .navbar .logo {
+        font-size: 20px;
+      }
+      .navbar .nav-links a {
+        font-size: 16px;
+      }
+      .page-content {
+        padding: 15px;
+        margin-top: 100px;  /* Adjust top margin */
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -138,7 +180,7 @@
 
   <section class="page-content">
     <h1>Contact</h1>
-    <p class="info"><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong>Library Street, Kesarapalli, Vijayawada, Andhra Pradesh, 521102</p>
+    <p class="info"><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Library Street, Kesarapalli, Vijayawada, Andhra Pradesh, 521102</p>
     <p class="info"><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+918333939078">+91 8333939078</a></p>
     <p class="info"><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:jahnavipotluri2004@gmail.com">jahnavipotluri2004@gmail.com</a></p>
     <p class="info"><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jahnavi-potluri-723a73262" target="_blank">linkedin.com/in/jahnavi-potluri-723a73262</a></p>

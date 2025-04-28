@@ -19,7 +19,8 @@
     }
 
     body {
-      background: url('imgprofile.jpg');
+      background: url('imgprofile.jpg') no-repeat center center fixed;
+      background-size: cover;
       min-height: 100vh;
       width: 100%;
       color: white;
@@ -103,8 +104,8 @@
     .content {
       background: rgba(255, 255, 255, 0.8);
       padding: 50px 40px;
-      border-radius: 25px; /* Increased border-radius for a larger curve */
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); /* Larger shadow */
+      border-radius: 25px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
       text-align: center;
       width: 500px;
       max-width: 90%;
@@ -122,10 +123,9 @@
       border-radius: 50%;
       border: 5px solid #00f1ff;
       margin-bottom: 20px;
-      animation: rotateImage 10s linear infinite; /* Adding rotation animation */
+      animation: rotateImage 10s linear infinite;
     }
 
-    /* Rotate the profile photo automatically */
     @keyframes rotateImage {
       0% {
         transform: rotate(0deg);
@@ -143,7 +143,6 @@
       transition: transform 0.5s ease, color 0.3s ease;
     }
 
-    /* Hover Effect for Name */
     h1:hover {
       transform: rotate(360deg);
       color: #00f1ff;
